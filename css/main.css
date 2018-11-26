@@ -19,11 +19,6 @@ html {
 
 body {
   margin: 0;
-  max-width: 45em;
-}
-
-.section-body {
-  margin: 1.4rem;
 }
 
 .img-flex {
@@ -62,4 +57,67 @@ section p {
 section {
   background-color: #e5c30a;
   padding: 1.3rem;
+}
+
+@media only screen and (min-width: 25em) {
+
+  .section-letter {
+    text-align: center;
+    width: 40%;
+  }
+
+  .section-icon {
+    text-align: center;
+    width: 40%;
+  }
+
+}
+
+@media only screen and (min-width: 38em) {
+
+  html {
+    font-size: 110%;
+    line-height: 1.4;
+  }
+
+  .section-letter {
+    order: 1;
+    width: 15%;
+  }
+
+  .section-body {
+    order: 2;
+    width: 45%;
+  }
+
+  .section-icon {
+    order: 3;
+    width: 15%;
+  }
+
+  .wrapper {
+    align-items: center;
+  }
+
+}
+
+@media only screen and (min-width: 60em) {
+
+  html {
+    font-size: 120%;
+    line-height: 1.5;
+  }
+
+}
+
+@media only screen and (min-width: 90em) {
+
+  html {
+    font-size: 130%;
+  }
+
+  body {
+    max-width: none;
+  }
+
 }
